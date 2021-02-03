@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image.jpg);
+    height: 100vh;
+    background-position:center;
+    background-size: cover;
+}
+.hero
+{ 
+top:50%;
+left: 50%;
+position: absolute;
+transform: translate(-50%,-50%);
+color: chartreuse;
+text-align: center;
+    font-family: 'Dosis', sans-serif;
+  
+    
+}
+p1{
+    color:transparent;
+    background-image: url(https://media.giphy.com/media/G0vaYbZDJV0cM/giphy.gif);
+    background-position: center; 
+    -webkit-background-clip:text;
+}
+h1{
+    font-size: 60px;
+    letter-spacing: 15px;
+    color:transparent;
+    background-image: url(https://media.giphy.com/media/2bXyklhc7qQv0dTVXr/giphy.gif);
+    background-position: center;
+    -webkit-background-clip:text;
+}
+   
+}
+hr{
+   width: 50%;
+    margin: 30px auto;
+    border: 1.5px solid #fff;
+    }
+p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
