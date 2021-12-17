@@ -1,42 +1,46 @@
 <html>
-<head>
-<title>@shuaib official COMING SOON PAGE</title>
-    
-    
-    <link href="styles.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-</head>
-<body>
-    <header>
-        
-        <div class ="hero">
-           <p1><b><i>@shuaib official </i></b></p1>
-            <p>Building Awesome Website</p>
-       <h1>COMING SOON</h1>
-    <hr>
-        <p id="launch"></p>
-            <embed src="music.mp3" type="audio/mpeg" autostart="true" hidden="true" loop="true" >
-            </div>
-    </header>
+    <head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-l.0">
+        <title>@Calculator</title>
+        <link rel="stylesheet" href="style.css">
+     </head>
+    <body>
+    <div class="container">
+        <div class="cal-box">
+        <form name="calculator">
+            
+            <br>
+            <input id="display" type="text" name="display" placeholder="0" readonly >
+            <br>
+            <br>
+            <input class="button" type="button" value="7" onclick="calculator.display.value += '7'">
+            <input class="button" type="button" value="8" onclick="calculator.display.value += '8'">
+            <input class="button" type="button" value="9" onclick="calculator.display.value += '9'">
+            <input class="button mathbutton" type="button" value="+" onclick="calculator.display.value += '+'">
+            <br>
+            <input class="button" type="button" value="4" onclick="calculator.display.value += '4'">
+            <input class="button" type="button" value="5" onclick="calculator.display.value += '5'">
+            <input class="button" type="button" value="6" onclick="calculator.display.value += '6'">
+            <input class="button mathbutton" type="button" value="-" onclick="calculator.display.value += '-'">
+            <br>
+            <input class="button" type="button" value="1" onclick="calculator.display.value += '1'">
+            <input class="button" type="button" value="2" onclick="calculator.display.value += '2'">
+            <input class="button" type="button" value="3" onclick="calculator.display.value += '3'">
+            <input class="button mathbutton" type="button" value="x" onclick="calculator.display.value += '*'">
+            <br>
+            <input class="button clearButton" type="button" value="c" onclick="calculator.display.value = ''">
+            <input class="button" type="button" value="0" onclick="calculator.display.value += '0'">
+            <input class="button mathbutton" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+            <input class="button mathbutton" type="button" value="/" onclick="calculator.display.value += '/'">
+            <br>
+            
+            
+            
 
-    
-    </body>  
-    <script>
-    var countDownDate=new Date("may 5, 2022 00:00:00").getTime();
-    var x = setInterval(function(){
-        var now =new Date().getTime();
-        var distance = countDownDate - now;
-        var days=Math.floor(distance / (1000*60*60*24));
-        var hours=Math.floor((distance % (1000*60*60*24))/(1000*60*60));
-        var minutes=Math.floor((distance % (1000*60*60))/(1000*60));
-        var seconds=Math.floor((distance % (1000*60)) / 1000);
-        document.getElementById("launch").innerHTML = days + "d : " + hours + "h : "+minutes+"m : "+seconds+"s";
-         if (distance<0)
-             {
-                 clearInterval(x);
-                 document.getElementById("launch").innerHTML="EXPIRED";
-             }
-    }, 1000);
-    </script>
+            </form>
+        </div>
+        </div>
+    </body>
     
 </html>
